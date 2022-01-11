@@ -10,17 +10,15 @@
 
 
 <div class="container">
-
-	<img src="cookie.jpg">
-	<button id="cookiesCount">Press here for cookies !</button>
+	<img src="cookie.jpg" id="imageCookie">
 	<h1 id="cookies">0</h1>
 </div>
 
 <script type="text/javascript">
 	let x = 0
-	document.getElementByID("cookiesCount").addEventListener("click", function() {
-		x += 1
-		document.getElementByID("cookies").textContent = x
+	document.getElementById("imageCookie").addEventListener("click", function() {
+		x += 1;
+		document.getElementById("cookies").textContent = x
 	})
 </script>
 </body>
