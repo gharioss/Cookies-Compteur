@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" />
+	<title>How many cookies</title>
+</head>
+<body>
+
+
+<div class="container">
+
+	<img src="cookie.jpg">
+	<button id="cookiesCount">Press here for cookies !</button>
+	<h1 id="cookies">0</h1>
+</div>
+
+<script type="text/javascript">
+	let x = 0
+	document.getElementByID("cookiesCount").addEventListener("click", function() {
+		x += 1
+		document.getElementByID("cookies").textContent = x
+	})
+</script>
+</body>
+</html>
